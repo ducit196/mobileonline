@@ -1,5 +1,6 @@
 package core.daoimpl.factory;
 
+import core.dao.AccountDao;
 import core.dao.CustomerDao;
 
 /**
@@ -23,4 +24,6 @@ public abstract class DAOFactory {
 
     //list of defined dao
     public abstract CustomerDao getCustomerDao();
+
+    public abstract AccountDao getAccountDao();
 }

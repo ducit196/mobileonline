@@ -1,7 +1,9 @@
 package core.daoimpl.factory;
 
+import core.dao.AccountDao;
 import core.dao.CustomerDao;
 import core.daoimpl.factory.DAOFactory;
+import core.daoimpl.mysql.MysqlAccountDaoImpl;
 import core.daoimpl.mysql.MysqlCustomerDaoImpl;
 
 import java.sql.Connection;
@@ -17,6 +19,7 @@ public class MysqlDAOFactory extends DAOFactory {
 
     public static Connection createConnection() {
         try {
+
             Class.forName(DRIVER);
             return DriverManager.getConnection(DBURL, USER, PASS);
         } catch (ClassNotFoundException e) {
@@ -28,6 +31,10 @@ public class MysqlDAOFactory extends DAOFactory {
     }
 
     public CustomerDao getCustomerDao() {
-        return new MysqlCustomerDaoImpl();
+        return MysqlCustomerDaoImpl.getInstance();
+    }
+
+    public AccountDao getAccountDao() {
+        return MysqlAccountDaoImpl.getInstance();
     }
 }

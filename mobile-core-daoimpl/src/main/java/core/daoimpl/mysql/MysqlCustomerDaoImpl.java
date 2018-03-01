@@ -15,7 +15,13 @@ public class MysqlCustomerDaoImpl implements CustomerDao{
     PreparedStatement pr = null;
     ResultSet rs = null;
 
-    public MysqlCustomerDaoImpl() {
+    private static MysqlCustomerDaoImpl outInstance = new MysqlCustomerDaoImpl();
+
+    public static MysqlCustomerDaoImpl getInstance() {
+        return outInstance;
+    }
+
+    private MysqlCustomerDaoImpl() {
         con = MysqlDAOFactory.createConnection();
     }
 
@@ -31,9 +37,6 @@ public class MysqlCustomerDaoImpl implements CustomerDao{
     }
 
     public static void main(String[] args) {
-        DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
-        CustomerDao customerDao = daoFactory.getCustomerDao();
-        customerDao.addCustomer(null);
     }
 
     /*To do everything in here*/

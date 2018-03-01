@@ -1,4 +1,6 @@
 package web.logic.controller;
 
-public class CustomerControl {
+import javax.servlet.http.HttpServlet;
+
+public class CustomerControl extends HttpServlet {
 }
