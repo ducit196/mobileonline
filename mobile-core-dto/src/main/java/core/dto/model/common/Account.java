@@ -9,6 +9,7 @@ public class Account {
     private String username;
     private String email;
     private String password;
+    private Role role;
     private Date createTime;
     private Date lastAccess;
     private boolean active;
@@ -16,15 +17,12 @@ public class Account {
     public Account() {
     }
 
-    public Account(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    public Account(String username, String email, String password, Date createTime, Date lastAccess, boolean active) {
+    public Account(String username, String email, String password, Role role,
+                   Date createTime, Date lastAccess, boolean active) {
         this.username = username;
         this.email = email;
         this.password = password;
+        this.role = role;
         this.createTime = createTime;
         this.lastAccess = lastAccess;
         this.active = active;
@@ -52,6 +50,14 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public Date getCreateTime() {

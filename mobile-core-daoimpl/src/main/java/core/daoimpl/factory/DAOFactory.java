@@ -1,7 +1,7 @@
 package core.daoimpl.factory;
 
-import core.dao.AccountDao;
-import core.dao.CustomerDao;
+import core.dao.common.AccountDao;
+import core.dao.customer.CustomerDao;
 
 /**
  * @author DucBa

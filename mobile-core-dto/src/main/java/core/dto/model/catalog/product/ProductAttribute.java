@@ -6,14 +6,16 @@ package core.dto.model.catalog.product;
 public class ProductAttribute {
     private Product product;
     private AttributeValue attribute;
+    private int amount;
     private float additionalPrice;
 
     public ProductAttribute() {
     }
 
-    public ProductAttribute(Product product, AttributeValue attribute, float additionalPrice) {
+    public ProductAttribute(Product product, AttributeValue attribute, int amount, float additionalPrice) {
         this.product = product;
         this.attribute = attribute;
+        this.amount = amount;
         this.additionalPrice = additionalPrice;
     }
 
@@ -31,6 +33,14 @@ public class ProductAttribute {
 
     public void setAttribute(AttributeValue attribute) {
         this.attribute = attribute;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public float getAdditionalPrice() {

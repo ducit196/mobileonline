@@ -1,4 +1,4 @@
-package core.dto.model.employee;
+package core.dto.model.common;
 
 /**
  * @author DucBa

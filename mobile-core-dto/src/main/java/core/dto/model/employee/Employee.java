@@ -2,6 +2,7 @@ package core.dto.model.employee;
 
 import core.dto.model.common.Account;
 import core.dto.model.common.Person;
+import core.dto.model.common.Role;
 
 /**
  * @author DucBa
@@ -9,7 +10,6 @@ import core.dto.model.common.Person;
 public class Employee extends Person{
     private long id;
     private Account account;
-    private Role role;
 
     public Employee() {
     }
@@ -33,14 +33,6 @@ public class Employee extends Person{
 
     public void setAccount(Account account) {
         this.account = account;
-    }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
     }
 }
 

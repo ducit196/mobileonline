@@ -1,12 +1,11 @@
-package core.daoimpl.mysql;
+package core.daoimpl.mysql.common;
 
-import core.dao.AccountDao;
+import core.dao.common.AccountDao;
 import core.daoimpl.factory.MysqlDAOFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class MysqlAccountDaoImpl implements AccountDao {
 
@@ -22,15 +21,5 @@ public class MysqlAccountDaoImpl implements AccountDao {
 
     private MysqlAccountDaoImpl() {
         con = MysqlDAOFactory.createConnection();
-    }
-
-    public void add() {
-        String sql = "INSERT INTO tets() VALUES('1996','1997')";
-        try {
-            pr = con.prepareStatement(sql);
-            pr.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }

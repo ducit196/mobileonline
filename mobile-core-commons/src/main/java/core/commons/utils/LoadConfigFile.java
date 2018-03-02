@@ -19,14 +19,14 @@ public class LoadConfigFile {
     public static List<String> loadConfigFile(String src) {
         List<String> configImformation = new ArrayList<String>();
         Properties properties = new Properties();
-        InputStream in = LoadConfigFile.class.getResourceAsStream("../../db_config_mysql.properties");
+        InputStream in = LoadConfigFile.class.getResourceAsStream(src);
         try {
             properties.load(new InputStreamReader(in, "UTF-8"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         configImformation.add(properties.getProperty("DRIVER"));
-        configImformation.add(properties.getProperty("URL"));
+        configImformation.add(properties.getProperty("DBURL"));
         configImformation.add(properties.getProperty("USER"));
         configImformation.add(properties.getProperty("PASS"));
         return configImformation;

@@ -16,7 +16,6 @@ public class Product {
     private Category category;
     private Manufacturer manufacturer;
     private float price;
-    private int amount;
     private float length;
     private float width;
     private float height;
@@ -29,8 +28,8 @@ public class Product {
 
     public Product(long id, String name, String description, List<ProductImage> images,
                    Category category, Manufacturer manufacturer, float price,
-                   int amount, float length, float width,float height,
-                   float weight, float ram, float rom) {
+                   float length, float width, float height, float weight,
+                   float ram, float rom) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -102,14 +101,6 @@ public class Product {
         this.price = price;
     }
 
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
     public float getLength() {
         return length;
     }
@@ -118,11 +109,11 @@ public class Product {
         this.length = length;
     }
 
-    public float getwidth() {
+    public float getWidth() {
         return width;
     }
 
-    public void setwidth(float width) {
+    public void setWidth(float width) {
         this.width = width;
     }
 
