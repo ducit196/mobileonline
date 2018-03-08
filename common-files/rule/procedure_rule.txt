@@ -1,0 +1,11 @@
+Dat ten procedure theo mau sau:
+PROC_TABLE_ACTION_DESCRIPTION
+
+
+Quy dinh ten cua cac action:
+INSERT
+UPDATE
+DELETE
+SELECT_ALL
+SELECT_BY_....
+SEARCH_BY_....
