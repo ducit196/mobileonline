@@ -1,1 +1,0 @@
-Copy procedure vào dây

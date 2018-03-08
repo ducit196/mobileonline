@@ -24,5 +24,13 @@ public class MysqlCustomerDaoImpl implements CustomerDao{
         con = MysqlDAOFactory.createConnection();
     }
 
+    public void add(Customer customer) {
+
+    }
+
+    public void update(Customer customer) {
+        String sql = "";
+    }
+
     /*To do everything in here*/
 }

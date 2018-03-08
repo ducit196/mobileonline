@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mobile-web-logic</module>
         <module>mobile-web</module>
         <module>mobile-core-dto</module>
         <module>mobile-core-dao</module>
@@ -47,7 +46,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <!--<scope>test</scope>-->
         </dependency>
 
     </dependencies>

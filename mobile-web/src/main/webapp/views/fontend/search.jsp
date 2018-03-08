@@ -11,8 +11,14 @@
     <title>Search</title>
 </head>
 <body>
-<jsp:include page="header.jsp"></jsp:include>
-<jsp:include page="footer.jsp"></jsp:include>
+<%--<jsp:include page="header.jsp"></jsp:include>--%>
+
+<form method="GET" action="../../LoginController">
+    <input type="submit">
+
+</form>
+
+<%--<jsp:include page="footer.jsp"></jsp:include>--%>
 
 </body>
 </html>

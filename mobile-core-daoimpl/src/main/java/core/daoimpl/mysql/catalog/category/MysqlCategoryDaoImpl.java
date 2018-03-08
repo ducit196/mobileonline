@@ -2,6 +2,7 @@ package core.daoimpl.mysql.catalog.category;
 
 import core.dao.catalog.category.CategoryDao;
 import core.daoimpl.factory.MysqlDAOFactory;
+import core.dto.model.catalog.category.Category;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -21,5 +22,9 @@ public class MysqlCategoryDaoImpl implements CategoryDao {
 
     private MysqlCategoryDaoImpl() {
         con = MysqlDAOFactory.createConnection();
+    }
+
+    public void add(Category category) {
+
     }
 }

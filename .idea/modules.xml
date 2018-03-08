@@ -10,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/mobile-core-utils/mobile-core-utils.iml" filepath="$PROJECT_DIR$/mobile-core-utils/mobile-core-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-online.iml" filepath="$PROJECT_DIR$/mobile-online.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-web/mobile-web.iml" filepath="$PROJECT_DIR$/mobile-web/mobile-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mobile-web-logic/mobile-web-logic.iml" filepath="$PROJECT_DIR$/mobile-web-logic/mobile-web-logic.iml" />
     </modules>
   </component>
 </project>

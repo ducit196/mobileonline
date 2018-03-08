@@ -13,7 +13,6 @@
         <module name="mobile-core-dto" />
         <module name="mobile-core-utils" />
         <module name="mobile-web" />
-        <module name="mobile-web-logic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

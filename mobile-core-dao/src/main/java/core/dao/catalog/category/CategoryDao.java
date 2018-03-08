@@ -1,5 +1,7 @@
 package core.dao.catalog.category;
 
-public interface CategoryDao {
+import core.dto.model.catalog.category.Category;
 
+public interface CategoryDao {
+    void add(Category category);
 }

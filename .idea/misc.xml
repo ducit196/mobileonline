@@ -12,6 +12,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/mobile-core-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mobile-web-logic/pom.xml" />
       </set>
     </option>
   </component>

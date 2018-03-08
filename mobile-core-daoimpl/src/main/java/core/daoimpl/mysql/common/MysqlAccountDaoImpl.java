@@ -2,15 +2,16 @@ package core.daoimpl.mysql.common;
 
 import core.dao.common.AccountDao;
 import core.daoimpl.factory.MysqlDAOFactory;
+import core.dto.model.common.Account;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MysqlAccountDaoImpl implements AccountDao {
 
     Connection con = null;
-    PreparedStatement pr = null;
+    CallableStatement cs = null;
     ResultSet rs = null;
 
     private static MysqlAccountDaoImpl ourInstance = new MysqlAccountDaoImpl();
@@ -21,5 +22,56 @@ public class MysqlAccountDaoImpl implements AccountDao {
 
     private MysqlAccountDaoImpl() {
         con = MysqlDAOFactory.createConnection();
+    }
+
+    public void insert(Account account) {
+
+    }
+
+    public void update(Account account) {
+
+    }
+
+    public void delete(long id) {
+
+    }
+
+    public List<Account> getAll() {
+        List<Account> list = new ArrayList<Account>();
+        String sql = "CALL PROC_ACCOUNT_SELECT_ALL";
+        try {
+            cs = con.prepareCall(sql);
+            rs = cs.executeQuery();
+            while (rs.next()) {
+                Account account = new Account();
+                account.setUsername(rs.getString(2));
+                account.setEmail(rs.getString(3));
+                account.setPassword(rs.getString(4));
+                list.add(account);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Account> getById(long id) {
+        List<Account> list = new ArrayList<Account>();
+        String sql = "CALL PROC_ACCOUNT_SELECT_BY_ID(?)";
+        try {
+            cs = con.prepareCall(sql);
+            cs.setInt(1, (int) id);
+            rs = cs.executeQuery();
+            while (rs.next()) {
+                Account account = new Account();
+                account.setUsername(rs.getString(2));
+                account.setEmail(rs.getString(3));
+                account.setPassword(rs.getString(4));
+                list.add(account);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 }
