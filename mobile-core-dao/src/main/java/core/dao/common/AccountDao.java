@@ -15,4 +15,6 @@ public interface AccountDao {
 
     List<Account> getById(long id);
 
+    Account login(Account account);
+
 }

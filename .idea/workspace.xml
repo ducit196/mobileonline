@@ -7,7 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61552fcf-21ea-4ada-8d16-35dfe72cf293" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductReviewDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/common-files/document/mobileshop.vpp" afterPath="$PROJECT_DIR$/common-files/document/mobileshop.vpp" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java" afterPath="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java" afterPath="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/DAOFactory.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/DAOFactory.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java" afterPath="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/mobile-web-logic/target/" />
     <ignored path="$PROJECT_DIR$/mobile-core-utils/target/" />
@@ -43,16 +53,50 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MysqlAccountDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlRoleDaoImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlAddressDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+              <folding>
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Singleton" />
         <option value="FxmlFile" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -71,8 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/common/Role.java" />
-        <option value="$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/catalog/product/ProductAttribute.java" />
         <option value="$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/catalog/product/Product.java" />
         <option value="$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/common/Account.java" />
         <option value="$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/employee/Employee.java" />
@@ -85,7 +127,6 @@
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/employee/EmployeeDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/order/OrderDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/shipping/ShippingDao.java" />
-        <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/order/CouponDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/MysqlAccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-api-test/src/main/java/api/test/MysqlConfigTest.java" />
@@ -94,11 +135,7 @@
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlAttributeValueDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlManufacturerDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductDaoImpl.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductImageDaoImpl.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/employee/MysqlEmployeeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlOrderDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/shipping/MysqlShippingDaoImpl.java" />
         <option value="$PROJECT_DIR$/ApplicationFiles/database/script/database.sql" />
@@ -108,20 +145,27 @@
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/catalog/category/CategoryDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/category/MysqlCategoryDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-api-test/src/main/java/api/test/Test.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java" />
         <option value="$PROJECT_DIR$/mobile-web/src/main/java/web/controller/catalog/LoginController.java" />
         <option value="$PROJECT_DIR$/mobile-web/src/main/webapp/views/fontend/search.jsp" />
         <option value="$PROJECT_DIR$/ApplicationFiles/database/procedure/quy_tac_dat_ten.txt" />
         <option value="$PROJECT_DIR$/ApplicationFiles/rule/dao_rule" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/resources/db_config_mysql.properties" />
-        <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java" />
         <option value="$PROJECT_DIR$/mobile-api-test/src/main/java/api/test/AccountDaoTest.java" />
-        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/customer/CustomerDao.java" />
         <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/customer/MysqlCustomerDaoImpl.java" />
         <option value="$PROJECT_DIR$/mobile-api-test/src/main/java/api/test/CustomerDaoTest.java" />
         <option value="$PROJECT_DIR$/ApplicationFiles/rule/procedure_rule.txt" />
         <option value="$PROJECT_DIR$/mobile-web/src/main/webapp/views/fontend/cart.jsp" />
+        <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java" />
+        <option value="$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductImageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductReviewDaoImpl.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -190,9 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,10 +241,252 @@
               <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="common-files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="common-files" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="common-files" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="employee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="shipping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileonline" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-core-daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -609,7 +892,9 @@
       <workItem from="1520219035880" duration="1313000" />
       <workItem from="1520350199629" duration="2232000" />
       <workItem from="1520414068924" duration="3895000" />
-      <workItem from="1520518389646" duration="264000" />
+      <workItem from="1520518389646" duration="903000" />
+      <workItem from="1521018863672" duration="3105000" />
+      <workItem from="1521387813399" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1519662140211</created>
@@ -688,7 +973,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520518537293</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit">
+      <created>1520518676065</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1520518676065</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -724,10 +1016,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36509000" />
+    <option name="totallyTimeSpent" value="40288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -743,7 +1036,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66613925" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="0" y="153" width="1366" height="421" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27382752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28290468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -777,66 +1070,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlAttributeValueDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlAttributeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlManufacturerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductImageDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/employee/MysqlEmployeeDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlOrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -848,13 +1085,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApplicationFiles/database/script/database.sql" />
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile-web-logic/src/main/java/web/logic/controller/CustomerControl.java" />
     <entry file="file://$PROJECT_DIR$/mobile-core-dto/src/main/java/core/dto/model/catalog/product/Product.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -874,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1326">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,13 +1126,6 @@
         <state relative-caret-position="170">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/catalog/category/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -920,27 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="e#1224#1225#0" expanded="false" />
-            <element signature="e#1281#1282#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -948,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,42 +1157,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationFiles/database/procedure/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationFiles/rule/dao_rule">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationFiles/database/procedure/README.txt" />
+    <entry file="file://$PROJECT_DIR$/ApplicationFiles/rule/dao_rule" />
     <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/resources/db_config_mysql.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,17 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/customer/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,19 +1185,8 @@
         <state relative-caret-position="340">
           <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding>
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#853#862#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="false" />
+            <element signature="e#817#818#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1049,24 +1195,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationFiles/rule/procedure_rule.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationFiles/rule/procedure_rule.txt" />
     <entry file="file://$PROJECT_DIR$/mobile-web/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-918">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,14 +1281,162 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common-files/database/script/script_file.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="491">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/common/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/catalog/product/AttributeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/catalog/category/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/customer/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/order/CouponDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-dao/src/main/java/core/dao/shipping/ShippingDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductImageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/catalog/product/MysqlProductReviewDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlOrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/order/MysqlCouponDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/factory/MysqlDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding>
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2530#2531#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#2705#2706#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2932#2933#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3127#3128#0" expanded="true" />
+            <element signature="e#3184#3185#0" expanded="true" />
+            <element signature="e#3222#3223#0" expanded="true" />
+            <element signature="e#3277#3278#0" expanded="true" />
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3409#3410#0" expanded="true" />
+            <element signature="e#3466#3467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAddressDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlAccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-core-daoimpl/src/main/java/core/daoimpl/mysql/common/MysqlRoleDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>

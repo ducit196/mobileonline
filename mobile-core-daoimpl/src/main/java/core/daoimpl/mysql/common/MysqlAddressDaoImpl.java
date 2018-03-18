@@ -1,12 +1,13 @@
 package core.daoimpl.mysql.common;
 
+import core.dao.common.AddressDao;
 import core.daoimpl.factory.MysqlDAOFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class MysqlAddressDaoImpl {
+public class MysqlAddressDaoImpl implements AddressDao {
 
     Connection con = null;
     PreparedStatement pr = null;

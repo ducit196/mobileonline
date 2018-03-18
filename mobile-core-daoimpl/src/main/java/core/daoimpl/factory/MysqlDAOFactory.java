@@ -1,10 +1,27 @@
 package core.daoimpl.factory;
 
 import core.commons.utils.LoadConfigFile;
+import core.dao.catalog.category.CategoryDao;
+import core.dao.catalog.product.*;
 import core.dao.common.AccountDao;
+import core.dao.common.AddressDao;
+import core.dao.common.RoleDao;
 import core.dao.customer.CustomerDao;
+import core.dao.employee.EmployeeDao;
+import core.dao.order.CouponDao;
+import core.dao.order.OrderDao;
+import core.dao.shipping.ShippingDao;
+import core.daoimpl.mysql.catalog.category.MysqlCategoryDaoImpl;
+import core.daoimpl.mysql.catalog.product.*;
 import core.daoimpl.mysql.common.MysqlAccountDaoImpl;
+import core.daoimpl.mysql.common.MysqlAddressDaoImpl;
+import core.daoimpl.mysql.common.MysqlRoleDaoImpl;
 import core.daoimpl.mysql.customer.MysqlCustomerDaoImpl;
+import core.daoimpl.mysql.employee.MysqlEmployeeDaoImpl;
+import core.daoimpl.mysql.order.MysqlCouponDaoImpl;
+import core.daoimpl.mysql.order.MysqlOrderDaoImpl;
+import core.daoimpl.mysql.shipping.MysqlShippingDaoImpl;
+import core.dto.model.catalog.product.ProductReview;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,11 +48,64 @@ public class MysqlDAOFactory extends DAOFactory {
         return null;
     }
 
-    public CustomerDao getCustomerDao() {
-        return MysqlCustomerDaoImpl.getInstance();
+    public CategoryDao getCategoryDao() {
+        return MysqlCategoryDaoImpl.getInstance();
+    }
+
+    public AttributeDao getAttributeDao() {
+        return MysqlAttributeDaoImpl.getInstance();
+    }
+
+    public AttributeValueDao getAttributeValueDao() {
+        return MysqlAttributeValueDaoImpl.getInstance();
+    }
+
+    public ManufacturerDao getManufacturerDao() {
+        return MysqlManufacturerDaoImpl.getInstance();
+    }
+
+    public ProductDao getProductDao() {
+        return MysqlProductDaoImpl.getInstance();
+    }
+
+    public ProductImageDao getProductImageDao() {
+        return MysqlProductImageDaoImpl.getInstance();
+    }
+
+    public ProductReviewDao getProductReviewDao() {
+        return MysqlProductReviewDaoImpl.getInstance();
     }
 
     public AccountDao getAccountDao() {
         return MysqlAccountDaoImpl.getInstance();
     }
+
+    public AddressDao getAddressDao() {
+        return MysqlAddressDaoImpl.getInstance();
+    }
+
+    public RoleDao getRoleDao() {
+        return MysqlRoleDaoImpl.getInstance();
+    }
+
+    public CustomerDao getCustomerDao() {
+        return MysqlCustomerDaoImpl.getInstance();
+    }
+
+    public EmployeeDao getEmployeeDao() {
+        return MysqlEmployeeDaoImpl.getInstance();
+    }
+
+    public CouponDao getCouponDao() {
+        return MysqlCouponDaoImpl.getInstance();
+    }
+
+    public OrderDao getOrderDao() {
+        return MysqlOrderDaoImpl.getInstance();
+    }
+
+    public ShippingDao getShippingDao() {
+        return MysqlShippingDaoImpl.getInstance();
+    }
+
 }

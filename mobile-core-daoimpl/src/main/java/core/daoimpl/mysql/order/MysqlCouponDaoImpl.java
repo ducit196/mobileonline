@@ -1,12 +1,13 @@
 package core.daoimpl.mysql.order;
 
+import core.dao.order.CouponDao;
 import core.daoimpl.factory.MysqlDAOFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class MysqlCouponDaoImpl {
+public class MysqlCouponDaoImpl implements CouponDao {
 
     Connection con = null;
     PreparedStatement pr = null;
