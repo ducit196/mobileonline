@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>ptit.ecommerce.team08</groupId>
-            <artifactId>mobile-web-logic</artifactId>
+            <artifactId>mobile-core-daoimpl</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

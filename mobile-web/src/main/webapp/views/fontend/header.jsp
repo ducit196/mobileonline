@@ -1,4 +1,4 @@
-<%--
+<%@ page import="core.dto.model.common.Account" %><%--
   Created by IntelliJ IDEA.
   User: DucBa
   Date: 2/25/2018
@@ -32,6 +32,16 @@
 
 </head>
 <body>
+
+<%
+    //account processing
+    Account account = null;
+    if (session.getAttribute("account") != null) {
+        account = (Account) session.getAttribute("account");
+    }
+
+%>
+
 
 <header id="header"><!--header-->
     <div class="header_top"><!--header_top-->
@@ -94,11 +104,24 @@
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
+                            <%
+                                if (account != null) {
+                            %>
+                            <li><a href="#"><i class="fa fa-user"></i> <%=account.getUsername()%>
+                            </a></li>
+                            <%} else {%>
+                            <li><a href="#"><i class="fa fa-user"></i> Account </a></li>
+                            <%}%>
                             <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
                             <li><a href="checkout.jsp"><i class="fa fa-crosshairs"></i> Checkout</a></li>
                             <li><a href="cart.jsp"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <%
+                                if (account != null) {
+                            %>
+                            <li><a href="../../LogoutController"><i class="fa fa-lock"></i> Logout</a></li>
+                            <%} else {%>
                             <li><a href="login.jsp"><i class="fa fa-lock"></i> Login</a></li>
+                            <%}%>
                         </ul>
                     </div>
                 </div>

@@ -33,4 +33,15 @@ public class AccountDaoTest {
         }
     }
 
+    @Test
+    public void loginTest() {
+        DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+        AccountDao accountDao = daoFactory.getAccountDao();
+        Account cc = new Account();
+        cc.setUsername("nbduc1996");
+        cc.setPassword("1234");
+        Account account = accountDao.login(cc);
+        System.out.println(account.getUsername());
+    }
+
 }

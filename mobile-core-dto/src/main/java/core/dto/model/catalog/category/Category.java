@@ -4,24 +4,24 @@ package core.dto.model.catalog.category;
  * @author DucBa
  */
 public class Category {
-    private long id;
+    private int id;
     private String categoryName;
-    private Category parentCategory;
+    private int parentCategory;
 
     public Category() {
     }
 
-    public Category(long id, String categoryName, Category parentCategory) {
+    public Category(int id, String categoryName, int parentCategory) {
         this.id = id;
         this.categoryName = categoryName;
         this.parentCategory = parentCategory;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -33,11 +33,11 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public Category getParentCategory() {
+    public int getParentCategory() {
         return parentCategory;
     }
 
-    public void setParentCategory(Category parentCategory) {
+    public void setParentCategory(int parentCategory) {
         this.parentCategory = parentCategory;
     }
 }

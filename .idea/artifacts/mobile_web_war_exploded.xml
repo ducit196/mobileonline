@@ -7,7 +7,18 @@
           <element id="module-output" name="mobile-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: ptit.ecommerce.team08:mobile-web-logic:1.0-SNAPSHOT" />
+          <element id="archive" name="mobile-core-daoimpl-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mobile-core-daoimpl" />
+          </element>
+          <element id="archive" name="mobile-core-dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mobile-core-dao" />
+          </element>
+          <element id="archive" name="mobile-core-dto-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mobile-core-dto" />
+          </element>
+          <element id="archive" name="mobile-core-commons-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mobile-core-commons" />
+          </element>
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />

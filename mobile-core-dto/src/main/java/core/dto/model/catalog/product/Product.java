@@ -9,47 +9,39 @@ import java.util.List;
  * @author DucBa
  */
 public class Product {
-    private long id;
+    private int id;
     private String name;
     private String description;
-    private List<ProductImage> images = new ArrayList<ProductImage>();
-    private Category category;
-    private Manufacturer manufacturer;
+    private String thumbai;
     private float price;
     private float length;
     private float width;
     private float height;
-    private float weight;
-    private float ram;
-    private float rom;
-
+    private Manufacturer manufacturer;
+    private Category category;
     public Product() {
     }
 
-    public Product(long id, String name, String description, List<ProductImage> images,
-                   Category category, Manufacturer manufacturer, float price,
-                   float length, float width, float height, float weight,
-                   float ram, float rom) {
+    public Product(int id, String name, String description, String thumbai,
+                   float price, float length, float width, float height,
+                   Manufacturer manufacturer, Category category) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.images = images;
-        this.category = category;
-        this.manufacturer = manufacturer;
+        this.thumbai = thumbai;
         this.price = price;
         this.length = length;
         this.width = width;
         this.height = height;
-        this.weight = weight;
-        this.ram = ram;
-        this.rom = rom;
+        this.manufacturer = manufacturer;
+        this.category = category;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -69,28 +61,12 @@ public class Product {
         this.description = description;
     }
 
-    public List<ProductImage> getImages() {
-        return images;
+    public String getThumbai() {
+        return thumbai;
     }
 
-    public void setImages(List<ProductImage> images) {
-        this.images = images;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public Manufacturer getManufacturer() {
-        return manufacturer;
-    }
-
-    public void setManufacturer(Manufacturer manufacturer) {
-        this.manufacturer = manufacturer;
+    public void setThumbai(String thumbai) {
+        this.thumbai = thumbai;
     }
 
     public float getPrice() {
@@ -125,27 +101,19 @@ public class Product {
         this.height = height;
     }
 
-    public float getWeight() {
-        return weight;
+    public Manufacturer getManufacturer() {
+        return manufacturer;
     }
 
-    public void setWeight(float weight) {
-        this.weight = weight;
+    public void setManufacturer(Manufacturer manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
-    public float getRam() {
-        return ram;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setRam(float ram) {
-        this.ram = ram;
-    }
-
-    public float getRom() {
-        return rom;
-    }
-
-    public void setRom(float rom) {
-        this.rom = rom;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

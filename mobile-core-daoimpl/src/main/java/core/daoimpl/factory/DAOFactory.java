@@ -32,32 +32,19 @@ public abstract class DAOFactory {
 
     //list of defined dao
     public abstract CategoryDao getCategoryDao();
-
     public abstract AttributeDao getAttributeDao();
-
     public abstract AttributeValueDao getAttributeValueDao();
-
     public abstract ManufacturerDao getManufacturerDao();
-
     public abstract ProductDao getProductDao();
-
     public abstract ProductImageDao getProductImageDao();
-
     public abstract ProductReviewDao getProductReviewDao();
     public abstract AccountDao getAccountDao();
-
     public abstract AddressDao getAddressDao();
-
     public abstract RoleDao getRoleDao();
-
     public abstract CustomerDao getCustomerDao();
-
     public abstract EmployeeDao getEmployeeDao();
-
     public abstract CouponDao getCouponDao();
-
     public abstract OrderDao getOrderDao();
-
     public abstract ShippingDao getShippingDao();
 
 }

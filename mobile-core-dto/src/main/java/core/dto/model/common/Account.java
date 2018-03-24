@@ -6,6 +6,7 @@ import java.util.Date;
  * @author DucBa
  */
 public class Account {
+    private long id;
     private String username;
     private String email;
     private String password;
@@ -17,8 +18,9 @@ public class Account {
     public Account() {
     }
 
-    public Account(String username, String email, String password, Role role,
-                   Date createTime, Date lastAccess, boolean active) {
+    public Account(long id, String username, String email, String password,
+                   Role role, Date createTime, Date lastAccess, boolean active) {
+        this.id = id;
         this.username = username;
         this.email = email;
         this.password = password;
@@ -26,6 +28,14 @@ public class Account {
         this.createTime = createTime;
         this.lastAccess = lastAccess;
         this.active = active;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getUsername() {

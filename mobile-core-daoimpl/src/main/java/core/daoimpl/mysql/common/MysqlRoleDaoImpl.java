@@ -27,13 +27,17 @@ public class MysqlRoleDaoImpl implements RoleDao {
         try {
             cs = con.prepareCall(sql);
             cs.setInt(1, id);
+            rs = cs.executeQuery();
             while (rs.next()) {
                 Role role = new Role();
                 role.setId(Integer.parseInt(rs.getString(1)));
-
+                role.setRole(Integer.parseInt(rs.getString(2)));
+                role.setDescription(rs.getString(3));
+                return role;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return null;
     }
 }
