@@ -8,24 +8,26 @@ import java.util.Date;
  * @author DucBa
  */
 public class Customer extends Person {
-    private long id;
+    private int id;
     private Account account;
 
     public Customer() {
     }
 
-    public Customer(String firstName, String middleName, String lastName, Address address,
-                    int gender, Date birthDay, long id, Account account) {
-        super(firstName, middleName, lastName, address, gender, birthDay);
+    public Customer(int id) {
         this.id = id;
-        this.account = account;
     }
 
-    public long getId() {
+    public Customer(String firstName, String middleName, String lastName, Address address, int gender, Date birthDay, int id) {
+        super(firstName, middleName, lastName, address, gender, birthDay);
+        this.id = id;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

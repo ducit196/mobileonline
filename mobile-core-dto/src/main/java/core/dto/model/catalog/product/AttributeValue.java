@@ -4,33 +4,25 @@ package core.dto.model.catalog.product;
  * @author DucBa
  */
 public class AttributeValue {
-    private long id;
+    private int id;
     private String name;
     private Attribute attribute;
 
     public AttributeValue() {
     }
 
-    public AttributeValue(long id, Attribute attribute, String name) {
+    public AttributeValue(int id, String name, Attribute attribute) {
         this.id = id;
-        this.attribute = attribute;
         this.name = name;
+        this.attribute = attribute;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
-    }
-
-    public Attribute getAttribute() {
-        return attribute;
-    }
-
-    public void setAttribute(Attribute attribute) {
-        this.attribute = attribute;
     }
 
     public String getName() {
@@ -39,5 +31,13 @@ public class AttributeValue {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Attribute getAttribute() {
+        return attribute;
+    }
+
+    public void setAttribute(Attribute attribute) {
+        this.attribute = attribute;
     }
 }

@@ -11,7 +11,7 @@ import java.util.Date;
  *
  */
 public class Order {
-    private long id;
+    private int id;
     private Date dateOrderd;
     private Date lastModified;
     private int paymentType;
@@ -23,8 +23,8 @@ public class Order {
     public Order() {
     }
 
-    public Order(long id, Date dateOrderd, Date lastModified, int paymentType,
-                 int status, Coupon coupon, Shipping shipping, Customer customer) {
+    public Order(int id, Date dateOrderd, Date lastModified, int paymentType, int status,
+                 Coupon coupon, Shipping shipping, Customer customer) {
         this.id = id;
         this.dateOrderd = dateOrderd;
         this.lastModified = lastModified;
@@ -35,20 +35,12 @@ public class Order {
         this.customer = customer;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
     }
 
     public Date getDateOrderd() {
@@ -83,11 +75,27 @@ public class Order {
         this.status = status;
     }
 
+    public Coupon getCoupon() {
+        return coupon;
+    }
+
+    public void setCoupon(Coupon coupon) {
+        this.coupon = coupon;
+    }
+
     public Shipping getShipping() {
         return shipping;
     }
 
     public void setShipping(Shipping shipping) {
         this.shipping = shipping;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

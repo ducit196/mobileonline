@@ -1,29 +1,36 @@
 package core.dto.model.employee;
 
 import core.dto.model.common.Account;
+import core.dto.model.common.Address;
 import core.dto.model.common.Person;
 import core.dto.model.common.Role;
+
+import java.util.Date;
 
 /**
  * @author DucBa
  */
 public class Employee extends Person{
-    private long id;
+    private int id;
     private Account account;
 
     public Employee() {
     }
 
-    public Employee(long id, Account account) {
+    public Employee(int id) {
         this.id = id;
-        this.account = account;
     }
 
-    public long getId() {
+    public Employee(String firstName, String middleName, String lastName, Address address, int gender, Date birthDay, int id) {
+        super(firstName, middleName, lastName, address, gender, birthDay);
+        this.id = id;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

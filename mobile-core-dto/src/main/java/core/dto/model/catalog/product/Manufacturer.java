@@ -4,7 +4,7 @@ package core.dto.model.catalog.product;
  * @author DucBa
  */
 public class Manufacturer {
-    private long id;
+    private int id;
     private String name;
     private String image;
     private String description;
@@ -12,18 +12,18 @@ public class Manufacturer {
     public Manufacturer() {
     }
 
-    public Manufacturer(long id, String name, String image, String description) {
+    public Manufacturer(int id, String name, String image, String description) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.description = description;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

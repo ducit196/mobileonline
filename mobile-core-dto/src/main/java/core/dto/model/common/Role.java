@@ -4,24 +4,24 @@ package core.dto.model.common;
  * @author DucBa
  */
 public class Role {
-    private long id;
+    private int id;
     private int role;
     private String description;
 
     public Role() {
     }
 
-    public Role(long id, int role, String description) {
+    public Role(int id, int role, String description) {
         this.id = id;
         this.role = role;
         this.description = description;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

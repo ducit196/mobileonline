@@ -1,24 +1,30 @@
 package core.dto.model.order;
 
+import java.util.Date;
+
 public class Coupon {
-    private long id;
+    private int id;
     private String code;
     private float sale;
+    private Date startDate;
+    private Date endDate;
 
     public Coupon() {
     }
 
-    public Coupon(long id, String code, float sale) {
+    public Coupon(int id, String code, float sale, Date startDate, Date endDate) {
         this.id = id;
         this.code = code;
         this.sale = sale;
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -36,5 +42,21 @@ public class Coupon {
 
     public void setSale(float sale) {
         this.sale = sale;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 }

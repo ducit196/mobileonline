@@ -4,6 +4,7 @@ package core.dto.model.common;
  * @author DucBa
  */
 public class Address {
+    private int id;
     private String section;
     private String road;
     private String town;
@@ -13,12 +14,21 @@ public class Address {
     public Address() {
     }
 
-    public Address(String section, String road, String town, String district, String city) {
+    public Address(int id, String section, String road, String town, String district, String city) {
+        this.id = id;
         this.section = section;
         this.road = road;
         this.town = town;
         this.district = district;
         this.city = city;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getSection() {

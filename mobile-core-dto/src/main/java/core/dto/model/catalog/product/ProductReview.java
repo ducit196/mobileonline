@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class ProductReview {
 
-    private long id;
+    private int id;
     private int reviewRating;
     private Date reviewDate;
     private String reviewContent;
@@ -19,19 +19,21 @@ public class ProductReview {
     public ProductReview() {
     }
 
-    public ProductReview(long id, int reviewRating, Date reviewDate, String reviewContent, Customer customer) {
+    public ProductReview(int id, int reviewRating, Date reviewDate, String reviewContent,
+                         Customer customer, Product product) {
         this.id = id;
         this.reviewRating = reviewRating;
         this.reviewDate = reviewDate;
         this.reviewContent = reviewContent;
         this.customer = customer;
+        this.product = product;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -65,5 +67,13 @@ public class ProductReview {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }
