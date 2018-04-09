@@ -11,7 +11,6 @@
         <module name="mobile-core-dao" />
         <module name="mobile-core-daoimpl" />
         <module name="mobile-core-dto" />
-        <module name="mobile-core-utils" />
         <module name="mobile-web" />
       </profile>
     </annotationProcessing>
@@ -25,7 +24,7 @@
       <module name="mobile-core-dto" target="1.5" />
       <module name="mobile-core-utils" target="1.5" />
       <module name="mobile-online" target="1.5" />
-      <module name="mobile-web" target="1.5" />
+      <module name="mobile-web" target="1.7" />
       <module name="mobile-web-logic" target="1.5" />
     </bytecodeTargetLevel>
   </component>

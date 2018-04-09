@@ -2,7 +2,7 @@ package core.dto.model.order;
 
 import core.dto.model.customer.Customer;
 import core.dto.model.shipping.Shipping;
-import sun.dc.pr.PRError;
+import core.dto.model.tax.Tax;
 
 import java.util.Date;
 
@@ -13,26 +13,26 @@ import java.util.Date;
 public class Order {
     private int id;
     private Date dateOrderd;
-    private Date lastModified;
     private int paymentType;
     private int status;
     private Coupon coupon;
     private Shipping shipping;
     private Customer customer;
+    private Tax tax;
 
     public Order() {
     }
 
-    public Order(int id, Date dateOrderd, Date lastModified, int paymentType, int status,
-                 Coupon coupon, Shipping shipping, Customer customer) {
+    public Order(int id, Date dateOrderd, int paymentType, int status, Coupon coupon,
+                 Shipping shipping, Customer customer, Tax tax) {
         this.id = id;
         this.dateOrderd = dateOrderd;
-        this.lastModified = lastModified;
         this.paymentType = paymentType;
         this.status = status;
         this.coupon = coupon;
         this.shipping = shipping;
         this.customer = customer;
+        this.tax = tax;
     }
 
     public int getId() {
@@ -49,14 +49,6 @@ public class Order {
 
     public void setDateOrderd(Date dateOrderd) {
         this.dateOrderd = dateOrderd;
-    }
-
-    public Date getLastModified() {
-        return lastModified;
-    }
-
-    public void setLastModified(Date lastModified) {
-        this.lastModified = lastModified;
     }
 
     public int getPaymentType() {
@@ -97,5 +89,13 @@ public class Order {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Tax getTax() {
+        return tax;
+    }
+
+    public void setTax(Tax tax) {
+        this.tax = tax;
     }
 }

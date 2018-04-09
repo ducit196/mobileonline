@@ -21,9 +21,11 @@ public class Employee extends Person{
         this.id = id;
     }
 
-    public Employee(String firstName, String middleName, String lastName, Address address, int gender, Date birthDay, int id) {
-        super(firstName, middleName, lastName, address, gender, birthDay);
+    public Employee(String firstName, String middleName, String lastName, Address address,
+                    int gender, Date birthDay, String phone, int id, Account account) {
+        super(firstName, middleName, lastName, address, gender, birthDay, phone);
         this.id = id;
+        this.account = account;
     }
 
     public int getId() {

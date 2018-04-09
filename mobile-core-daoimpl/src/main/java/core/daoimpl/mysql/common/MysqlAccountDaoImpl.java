@@ -89,8 +89,7 @@ public class MysqlAccountDaoImpl implements AccountDao {
         return list;
     }
 
-    public List<Account> getById(long id) {
-        List<Account> list = new ArrayList<Account>();
+    public Account getById(int id) {
         String sql = "CALL PROC_ACCOUNT_SELECT_BY_ID(?)";
         try {
             cs = con.prepareCall(sql);
@@ -101,12 +100,12 @@ public class MysqlAccountDaoImpl implements AccountDao {
                 account.setUsername(rs.getString(2));
                 account.setEmail(rs.getString(3));
                 account.setPassword(rs.getString(4));
-                list.add(account);
+                return account;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return list;
+        return null;
     }
 
 }

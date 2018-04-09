@@ -17,13 +17,15 @@ public class Person {
     public Person() {
     }
 
-    public Person(String firstName, String middleName, String lastName, Address address, int gender, Date birthDay) {
+    public Person(String firstName, String middleName, String lastName, Address address,
+                  int gender, Date birthDay, String phone) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.address = address;
         this.gender = gender;
         this.birthDay = birthDay;
+        this.phone = phone;
     }
 
     public String getFirstName() {

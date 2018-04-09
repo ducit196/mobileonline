@@ -7,14 +7,14 @@ import core.dto.model.common.Address;
  */
 public class Shipping {
     private int id;
-    private int shippingType;
+    private String shippingType;
     private float shippingCost;
     private Address shippingAddress;
 
     public Shipping() {
     }
 
-    public Shipping(int id, int shippingType, float shippingCost, Address shippingAddress) {
+    public Shipping(int id, String shippingType, float shippingCost, Address shippingAddress) {
         this.id = id;
         this.shippingType = shippingType;
         this.shippingCost = shippingCost;
@@ -29,11 +29,11 @@ public class Shipping {
         this.id = id;
     }
 
-    public int getShippingType() {
+    public String getShippingType() {
         return shippingType;
     }
 
-    public void setShippingType(int shippingType) {
+    public void setShippingType(String shippingType) {
         this.shippingType = shippingType;
     }
 

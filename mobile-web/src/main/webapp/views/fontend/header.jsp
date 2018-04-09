@@ -1,4 +1,7 @@
-<%@ page import="core.dto.model.common.Account" %><%--
+<%@ page import="core.dto.model.common.Account" %>
+<%@ page import="core.dto.model.customer.Customer" %>
+<%@ page import="core.daoimpl.factory.DAOFactory" %>
+<%@ page import="core.dao.customer.CustomerDao" %><%--
   Created by IntelliJ IDEA.
   User: DucBa
   Date: 2/25/2018
@@ -38,6 +41,15 @@
     Account account = null;
     if (session.getAttribute("account") != null) {
         account = (Account) session.getAttribute("account");
+    }
+
+    //customer process
+    DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+    CustomerDao customerDao = daoFactory.getCustomerDao();
+    Customer customer = null;
+    if (account != null) {
+        customer = customerDao.getByAccountId(account.getId());
+        session.setAttribute("customer", customer);
     }
 
 %>

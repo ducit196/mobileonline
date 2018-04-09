@@ -3,7 +3,9 @@
 <%@ page import="core.dto.model.catalog.product.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page import="core.dao.catalog.category.CategoryDao" %>
-<%@ page import="core.dto.model.catalog.category.Category" %><%--
+<%@ page import="core.dto.model.catalog.category.Category" %>
+<%@ page import="core.dto.model.shoppingcart.ShoppingCart" %>
+<%@ page import="core.dto.model.customer.Customer" %><%--
   Created by IntelliJ IDEA.
   User: nbduc
   Date: 3/21/2018
@@ -19,6 +21,8 @@
 <jsp:include page="header.jsp"></jsp:include>
 
 <%
+
+    //category and product processing
     int categoryId = 0;
     if (request.getParameter("categoryId") != null) {
         categoryId = Integer.parseInt(request.getParameter("categoryId"));
@@ -29,6 +33,24 @@
     List<Product> listProduct = productDao.getByCategoryId(categoryId);
     Category category = categoryDao.getById(categoryId);
     session.setAttribute("listProduct", listProduct);
+
+    //shopping cart processing
+    ShoppingCart shoppingCart = null;
+    if (session.getAttribute("shoppingCart") != null) {
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+    } else {
+        shoppingCart = new ShoppingCart();
+        session.setAttribute("shoppingCart", shoppingCart);
+    }
+
+    //customer processing
+    Customer customer = null;
+    if (session.getAttribute("customer") != null) {
+        customer = (Customer) session.getAttribute("customer");
+        session.setAttribute("customer", customer);
+    }
+
+
 %>
 
 <div class="features_items"><!--features_items-->
@@ -49,12 +71,12 @@
                     </h2>
                     <p><%=product.getName()%>
                     </p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                 </div>
             </div>
             <div class="choose">
                 <ul class="nav nav-pills nav-justified">
-                    <li><a href="#"><i class="fa fa-plus-square"></i>Add to cart</a></li>
+                    <li><a href="../../ShoppingCartController?productId=<%=product.getId()%>&quantity=1&command=plus"><i
+                            class="fa fa-plus-square"></i>Add to cart</a></li>
                     <li><a href="product_detail.jsp?index=<%=i%>"><i class="fa fa-plus-square"></i>View detail</a></li>
                 </ul>
             </div>

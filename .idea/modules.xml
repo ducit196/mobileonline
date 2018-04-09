@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/mobile-core-dao/mobile-core-dao.iml" filepath="$PROJECT_DIR$/mobile-core-dao/mobile-core-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-core-daoimpl/mobile-core-daoimpl.iml" filepath="$PROJECT_DIR$/mobile-core-daoimpl/mobile-core-daoimpl.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-core-dto/mobile-core-dto.iml" filepath="$PROJECT_DIR$/mobile-core-dto/mobile-core-dto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mobile-core-utils/mobile-core-utils.iml" filepath="$PROJECT_DIR$/mobile-core-utils/mobile-core-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-online.iml" filepath="$PROJECT_DIR$/mobile-online.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile-web/mobile-web.iml" filepath="$PROJECT_DIR$/mobile-web/mobile-web.iml" />
     </modules>

@@ -9,7 +9,7 @@ public interface AccountDao {
 
     List<Account> getAll();
 
-    List<Account> getById(long id);
+    Account getById(int id);
 
     Account login(Account account);
 

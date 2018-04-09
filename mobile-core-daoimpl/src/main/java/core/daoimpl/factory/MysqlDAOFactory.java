@@ -11,6 +11,8 @@ import core.dao.employee.EmployeeDao;
 import core.dao.order.CouponDao;
 import core.dao.order.OrderDao;
 import core.dao.shipping.ShippingDao;
+import core.dao.shopping_cart.ShoppingCartDao;
+import core.dao.shopping_cart.ShoppingCartItemDao;
 import core.daoimpl.mysql.catalog.category.MysqlCategoryDaoImpl;
 import core.daoimpl.mysql.catalog.product.*;
 import core.daoimpl.mysql.common.MysqlAccountDaoImpl;
@@ -21,6 +23,8 @@ import core.daoimpl.mysql.employee.MysqlEmployeeDaoImpl;
 import core.daoimpl.mysql.order.MysqlCouponDaoImpl;
 import core.daoimpl.mysql.order.MysqlOrderDaoImpl;
 import core.daoimpl.mysql.shipping.MysqlShippingDaoImpl;
+import core.daoimpl.mysql.shopping_cart.MysqlShoppingCartDaoImpl;
+import core.daoimpl.mysql.shopping_cart.MysqlShoppingCartItemDaoImpl;
 import core.dto.model.catalog.product.ProductReview;
 
 import java.sql.Connection;
@@ -60,16 +64,16 @@ public class MysqlDAOFactory extends DAOFactory {
         return MysqlAttributeValueDaoImpl.getInstance();
     }
 
+    public ProductAttributeDao getProductAttributeDao() {
+        return MysqlProductAttributeDaoImpl.getInstance();
+    }
+
     public ManufacturerDao getManufacturerDao() {
         return MysqlManufacturerDaoImpl.getInstance();
     }
 
     public ProductDao getProductDao() {
         return MysqlProductDaoImpl.getInstance();
-    }
-
-    public ProductImageDao getProductImageDao() {
-        return MysqlProductImageDaoImpl.getInstance();
     }
 
     public ProductReviewDao getProductReviewDao() {
@@ -106,6 +110,14 @@ public class MysqlDAOFactory extends DAOFactory {
 
     public ShippingDao getShippingDao() {
         return MysqlShippingDaoImpl.getInstance();
+    }
+
+    public ShoppingCartDao getShoppingCartDao() {
+        return MysqlShoppingCartDaoImpl.getInstance();
+    }
+
+    public ShoppingCartItemDao getShoppingCartItemDao() {
+        return MysqlShoppingCartItemDaoImpl.getInstance();
     }
 
 }

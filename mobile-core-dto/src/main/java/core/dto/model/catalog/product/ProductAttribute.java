@@ -4,6 +4,7 @@ package core.dto.model.catalog.product;
  * @author DucBa
  */
 public class ProductAttribute {
+    private int id;
     private Product product;
     private AttributeValue attribute;
     private int amount;
@@ -12,11 +13,20 @@ public class ProductAttribute {
     public ProductAttribute() {
     }
 
-    public ProductAttribute(Product product, AttributeValue attribute, int amount, float additionalPrice) {
+    public ProductAttribute(int id, Product product, AttributeValue attribute, int amount, float additionalPrice) {
+        this.id = id;
         this.product = product;
         this.attribute = attribute;
         this.amount = amount;
         this.additionalPrice = additionalPrice;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Product getProduct() {

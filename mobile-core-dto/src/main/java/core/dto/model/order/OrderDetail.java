@@ -1,21 +1,18 @@
-package core.dto.model.shoppingcart;
+package core.dto.model.order;
 
+import core.dto.model.catalog.product.Attribute;
 import core.dto.model.catalog.product.Product;
-import core.dto.model.catalog.product.ProductAttribute;
 
-/**
- * @author DucBa
- */
-public class ShoppingCartItem {
+public class OrderDetail {
 
     private Product product;
     private String attribute;
     private int quantity;
 
-    public ShoppingCartItem() {
+    public OrderDetail() {
     }
 
-    public ShoppingCartItem(Product product, String attribute, int quantity) {
+    public OrderDetail(Product product, String attribute, int quantity) {
         this.product = product;
         this.attribute = attribute;
         this.quantity = quantity;

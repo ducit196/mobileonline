@@ -22,6 +22,10 @@ public class Product {
     public Product() {
     }
 
+    public Product(int id) {
+        this.id = id;
+    }
+
     public Product(int id, String name, String description, String thumbai,
                    float price, float length, float width, float height,
                    Manufacturer manufacturer, Category category) {

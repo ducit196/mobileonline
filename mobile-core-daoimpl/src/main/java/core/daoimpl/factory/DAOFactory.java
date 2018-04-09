@@ -10,6 +10,8 @@ import core.dao.employee.EmployeeDao;
 import core.dao.order.CouponDao;
 import core.dao.order.OrderDao;
 import core.dao.shipping.ShippingDao;
+import core.dao.shopping_cart.ShoppingCartDao;
+import core.dao.shopping_cart.ShoppingCartItemDao;
 
 /**
  * @author DucBa
@@ -34,9 +36,10 @@ public abstract class DAOFactory {
     public abstract CategoryDao getCategoryDao();
     public abstract AttributeDao getAttributeDao();
     public abstract AttributeValueDao getAttributeValueDao();
+
+    public abstract ProductAttributeDao getProductAttributeDao();
     public abstract ManufacturerDao getManufacturerDao();
     public abstract ProductDao getProductDao();
-    public abstract ProductImageDao getProductImageDao();
     public abstract ProductReviewDao getProductReviewDao();
     public abstract AccountDao getAccountDao();
     public abstract AddressDao getAddressDao();
@@ -46,5 +49,10 @@ public abstract class DAOFactory {
     public abstract CouponDao getCouponDao();
     public abstract OrderDao getOrderDao();
     public abstract ShippingDao getShippingDao();
+
+    public abstract ShoppingCartDao getShoppingCartDao();
+
+    public abstract ShoppingCartItemDao getShoppingCartItemDao();
+
 
 }

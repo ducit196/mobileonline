@@ -6,20 +6,31 @@ import java.util.HashMap;
  * @author DucBa
  */
 public class ShoppingCart {
-    private HashMap<Long, ShoppingCartItem> shoppingCart;
+    private int id;
+    private HashMap<Integer, ShoppingCartItem> shoppingCart;
 
     public ShoppingCart() {
+        shoppingCart = new HashMap<Integer, ShoppingCartItem>();
     }
 
-    public ShoppingCart(HashMap<Long, ShoppingCartItem> shoppingCart) {
+    public ShoppingCart(int id, HashMap<Integer, ShoppingCartItem> shoppingCart) {
+        this.id = id;
         this.shoppingCart = shoppingCart;
     }
 
-    public HashMap<Long, ShoppingCartItem> getShoppingCart() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public HashMap<Integer, ShoppingCartItem> getShoppingCart() {
         return shoppingCart;
     }
 
-    public void setShoppingCart(HashMap<Long, ShoppingCartItem> shoppingCart) {
+    public void setShoppingCart(HashMap<Integer, ShoppingCartItem> shoppingCart) {
         this.shoppingCart = shoppingCart;
     }
 
@@ -27,14 +38,15 @@ public class ShoppingCart {
      * @param productId the product that you want to add to cart
      * @param item      the product and quantity those you want to add to cart
      */
-    public void addToCart(long productId, ShoppingCartItem item) {
+    public void addToCart(int productId, ShoppingCartItem item) {
         //Have shoppingCart ever contains this product
         boolean check = shoppingCart.containsKey(productId);
         if (check) {
             //get old quantity
             int oldQuantity = shoppingCart.get(productId).getQuantity();
             //increase quantity
-            item.setQuantity(oldQuantity + item.getQuantity());
+            int newQuantity = oldQuantity + item.getQuantity();
+            item.setQuantity(newQuantity);
             shoppingCart.put(productId, item);
         } else {
             shoppingCart.put(productId, item);

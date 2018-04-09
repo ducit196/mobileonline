@@ -18,9 +18,10 @@ public class Customer extends Person {
         this.id = id;
     }
 
-    public Customer(String firstName, String middleName, String lastName, Address address, int gender, Date birthDay, int id) {
-        super(firstName, middleName, lastName, address, gender, birthDay);
+    public Customer(int id, String firstName, String middleName, String lastName, int gender, Date birthDay, String phone, Account account, Address address) {
+        super(firstName, middleName, lastName, address, gender, birthDay, phone);
         this.id = id;
+        this.account = account;
     }
 
     public int getId() {
@@ -38,4 +39,6 @@ public class Customer extends Person {
     public void setAccount(Account account) {
         this.account = account;
     }
+
+
 }

@@ -1,7 +1,11 @@
 <%@ page import="core.dto.model.shoppingcart.ShoppingCart" %>
 <%@ page import="java.util.List" %>
 <%@ page import="core.dto.model.catalog.product.Product" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="core.dto.model.catalog.product.ProductAttribute" %>
+<%@ page import="core.daoimpl.factory.DAOFactory" %>
+<%@ page import="core.dao.catalog.product.ProductAttributeDao" %>
+<%@ page import="core.dto.model.customer.Customer" %><%--
   Created by IntelliJ IDEA.
   User: DucBa
   Date: 2/25/2018
@@ -23,12 +27,25 @@
         session.setAttribute("shoppingCart", shoppingCart);
     }
 
+    //attribute processing
+    DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+    ProductAttributeDao productAttributeDao = daoFactory.getProductAttributeDao();
+    List<ProductAttribute> listProductAttribute = new ArrayList<>();
+
     //product detail processing
     int indexProduct = 0;
     Product product = null;
     if (session.getAttribute("listProduct") != null && request.getParameter("index") != null) {
         List<Product> listProduct = (ArrayList<Product>) session.getAttribute("listProduct");
         product = listProduct.get(Integer.parseInt(request.getParameter("index")));
+        listProductAttribute = productAttributeDao.getByProductId(product.getId());
+    }
+
+    //customer processing
+    Customer customer = null;
+    if (session.getAttribute("customer") != null) {
+        customer = (Customer) session.getAttribute("customer");
+        session.setAttribute("customer", customer);
     }
 %>
 
@@ -88,15 +105,32 @@
                                 <span>
 									<span>US $<%=product.getPrice()%></span>
 									<label>Quantity:</label>
-									<input type="text" value="3" />
-									<button type="button" class="btn btn-fefault cart">
-										<i class="fa fa-shopping-cart"></i>
-										Add to cart
-									</button>
+                                    <input value="<%=product.getId()%>" type="hidden" id="productId">
+									<input type="number" value="1" id="quantity"/>
+									<%--<button id="btnAddToCart" type="button" class="btn btn-fefault cart" onclick="addToCart()">--%>
+										<%--<i class="fa fa-shopping-cart"></i>--%>
+										<%--Add to cart--%>
+									<%--</button>--%>
+
+                                    <a id='addToCart'
+                                       href="../../ShoppingCartController?productId=<%=product.getId()%>&quantity=1&command=plus"
+                                       onclick="addToCart()">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Add to cart
+                                    </a>
 								</span>
                                 <p><b>Availability:</b> In Stock</p>
-                                <p><b>Condition:</b> New</p>
-                                <p><b>Brand:</b> E-SHOPPER</p>
+                                <p><b>Color:</b>
+                                    <select id="attribute">
+                                        <%
+                                            for (ProductAttribute productAttribute : listProductAttribute) {
+                                        %>
+                                        <option value="<%=productAttribute.getAttribute().getName()%>"><%=productAttribute.getAttribute().getName()%>
+                                        </option>
+                                        <%}%>
+                                    </select>
+
+                                </p>
                                 <a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
                             </div><!--/product-information-->
                         </div>
@@ -391,3 +425,24 @@
     <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
+
+<script>
+
+    // $('#attribute').on('change', function () {
+    //     var attribute = $(this).val();
+    //     var productId = $('#productId').val();
+    //     var quantity = $('#quantity').val();
+    //     $('#addToCart').prop('href', '../../ShoppingCartController?productId=' + productId +
+    //                         '&quantity=' + quantity + '&attribute=' + attribute + '&command=plus');
+    // });
+    function addToCart() {
+        var attribute = $('#attribute').val();
+        alert(attribute);
+        // $('#btnAddToCart').prop();
+        var productId = $('#productId').val();
+        var quantity = $('#quantity').val();
+        $('#addToCart').prop('href', '../../ShoppingCartController?productId=' + productId +
+            '&quantity=' + quantity + '&attribute=' + attribute + '&command=plus');
+    }
+
+</script>
