@@ -49,11 +49,10 @@
     Customer customer = null;
     if (account != null) {
         customer = customerDao.getByAccountId(account.getId());
+        System.out.println(customer.getFirstName());
         session.setAttribute("customer", customer);
     }
-
 %>
-
 
 <header id="header"><!--header-->
     <div class="header_top"><!--header_top-->

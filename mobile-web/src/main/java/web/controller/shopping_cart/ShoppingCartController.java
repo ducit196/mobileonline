@@ -3,6 +3,7 @@ package web.controller.shopping_cart;
 import core.dao.catalog.product.ProductDao;
 import core.dao.shopping_cart.ShoppingCartDao;
 import core.daoimpl.factory.DAOFactory;
+import core.dto.model.common.Account;
 import core.dto.model.customer.Customer;
 import core.dto.model.shoppingcart.ShoppingCart;
 import core.dto.model.shoppingcart.ShoppingCartItem;
@@ -64,14 +65,11 @@ public class ShoppingCartController extends HttpServlet {
                 if (session.getAttribute("customer") != null) {
                     customer = (Customer) session.getAttribute("customer");
                 }
-                if (customer != null) {
-                    ShoppingCart shoppingCartSave = (ShoppingCart) session.getAttribute("shoppingCart");
-                    shoppingCartSave.setId((int) new Date().getTime());
-                    shoppingCartDao.insert(shoppingCartSave, new Date(), customer.getId());
-                    url = "/views/fontend/home.jsp";
-                } else {
-                    url = "/views/fontend/login.jsp";
-                }
+                ShoppingCart shoppingCartSave = (ShoppingCart) session.getAttribute("shoppingCart");
+                shoppingCartSave.setId((int) new Date().getTime());
+                shoppingCartDao.insert(shoppingCartSave, new Date(), customer.getId());
+                url = "/views/fontend/home.jsp";
+                session.setAttribute("shoppingCart", null);
                 break;
         }
         resp.sendRedirect(url);

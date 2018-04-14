@@ -3,7 +3,10 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.Set" %>
-<%@ page import="core.dto.model.customer.Customer" %><%--
+<%@ page import="core.dto.model.customer.Customer" %>
+<%@ page import="core.dto.model.common.Account" %>
+<%@ page import="core.daoimpl.factory.DAOFactory" %>
+<%@ page import="core.dao.shopping_cart.ShoppingCartDao" %><%--
   Created by IntelliJ IDEA.
   User: nbduc
   Date: 3/7/2018
@@ -18,20 +21,32 @@
 <body>
 
 <%
-
-    //shopping cart processing
-    ShoppingCart shoppingCart = null;
-    if (session.getAttribute("shoppingCart") != null) {
-        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
-    }
-    session.setAttribute("shoppingCart", shoppingCart);
-
+    DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
     //customer processing
     Customer customer = null;
     if (session.getAttribute("customer") != null) {
         customer = (Customer) session.getAttribute("customer");
         session.setAttribute("customer", customer);
+        System.out.println("Customer đéo null");
     }
+
+    //shopping cart processing
+    ShoppingCart shoppingCart = null;
+    if (session.getAttribute("shoppingCart") != null) {
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+        System.out.println("Co roi");
+    } else if (customer != null) {
+        ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
+        shoppingCart = shoppingCartDao.getByCustomerId(customer.getId());
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+        System.out.println("Lay tu db");
+    } else {
+        shoppingCart = new ShoppingCart();
+        session.setAttribute("shoppingCart", shoppingCart);
+        System.out.println("Chua co");
+    }
+
+
 %>
 
 
@@ -105,9 +120,18 @@
     </div>
 </section> <!--/#cart_items-->
 <a href="#" style="margin: 400px">Remove all</a>
-<a href="../../ShoppingCartController?command=save">Save for later</a>
+<%
+    if (customer == null) {
+%>
+<a href="login.jsp">Save for later</a>
 
-    <jsp:include page="footer.jsp"></jsp:include>
+<%
+} else {
+%>
+<a href="../../ShoppingCartController?command=save">Save for later</a>
+<%}%>
+
+<jsp:include page="footer.jsp"></jsp:include>
 
 </body>
 </html>

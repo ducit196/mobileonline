@@ -12,10 +12,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MysqlShoppingCartDaoImpl implements ShoppingCartDao {
 
@@ -55,14 +52,42 @@ public class MysqlShoppingCartDaoImpl implements ShoppingCartDao {
         }
     }
 
+    public ShoppingCart getByCustomerId(int customerId) {
+        ShoppingCartItemDao shoppingCartItemDao = daoFactory.getShoppingCartItemDao();
+        String sql = "CALL PROC_SHOPPING_CART_SELECT_BY_CUSTOMER_ID(?)";
+        try {
+            cs = con.prepareCall(sql);
+            cs.setInt(1, customerId);
+            rs = cs.executeQuery();
+            while (rs.next()) {
+                ShoppingCart shoppingCart = new ShoppingCart();
+                int shoppingCartId = Integer.parseInt(rs.getString(1));
+                shoppingCart.setId(shoppingCartId);
+                List<ShoppingCartItem> list = shoppingCartItemDao.getByShoppingCartId(shoppingCartId);
+                HashMap<Integer, ShoppingCartItem> map = new HashMap<Integer, ShoppingCartItem>();
+                for (ShoppingCartItem shoppingCartItem : list) {
+                    map.put(shoppingCartItem.getProduct().getId(), shoppingCartItem);
+                }
+                shoppingCart.setShoppingCart(map);
+                return shoppingCart;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
         ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
-        ShoppingCart shoppingCart = new ShoppingCart();
-        HashMap<Integer, ShoppingCartItem> longShoppingCartItemHashMap = new HashMap<Integer, ShoppingCartItem>();
-        longShoppingCartItemHashMap.put(1, new ShoppingCartItem(new Product(1), "red", 1));
-        shoppingCart.setShoppingCart(longShoppingCartItemHashMap);
-        shoppingCart.setId(3);
-        shoppingCartDao.insert(shoppingCart, new Date(), 1);
+//        ShoppingCart shoppingCart = new ShoppingCart();
+////        HashMap<Integer, ShoppingCartItem> longShoppingCartItemHashMap = new HashMap<Integer, ShoppingCartItem>();
+////        longShoppingCartItemHashMap.put(1, new ShoppingCartItem(new Product(1), "red", 1));
+////        shoppingCart.setShoppingCart(longShoppingCartItemHashMap);
+////        shoppingCart.setId(3);
+////        shoppingCartDao.insert(shoppingCart, new Date(), 1);
+
+        ShoppingCart shoppingCart = shoppingCartDao.getByCustomerId(1);
+        System.out.println(shoppingCart.getId());
     }
 }

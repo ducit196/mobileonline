@@ -38,6 +38,7 @@ public class MysqlAccountDaoImpl implements AccountDao {
             rs = cs.executeQuery();
             while (rs.next()) {
                 Account account2 = new Account();
+                account2.setId(Integer.parseInt(rs.getString(1)));
                 account2.setUsername(rs.getString(2));
                 account2.setEmail(rs.getString(3));
                 account2.setPassword(rs.getString(4));

@@ -33,6 +33,7 @@ public class LoginController extends HttpServlet {
         Account loginAccount = accountDao.login(account);
         if (loginAccount != null && loginAccount.getRole().getRole() == RoleConstant.CUSTOMER) {
             session.setAttribute("account", loginAccount);
+            session.setAttribute("shoppingCart", null);
             url = "/views/fontend/home.jsp";
         } else {
             url = "/views/fontend/error.jsp";

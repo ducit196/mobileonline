@@ -5,7 +5,8 @@
 <%@ page import="core.dao.catalog.category.CategoryDao" %>
 <%@ page import="core.dto.model.catalog.category.Category" %>
 <%@ page import="core.dto.model.shoppingcart.ShoppingCart" %>
-<%@ page import="core.dto.model.customer.Customer" %><%--
+<%@ page import="core.dto.model.customer.Customer" %>
+<%@ page import="core.dao.shopping_cart.ShoppingCartDao" %><%--
   Created by IntelliJ IDEA.
   User: nbduc
   Date: 3/21/2018
@@ -34,20 +35,24 @@
     Category category = categoryDao.getById(categoryId);
     session.setAttribute("listProduct", listProduct);
 
-    //shopping cart processing
-    ShoppingCart shoppingCart = null;
-    if (session.getAttribute("shoppingCart") != null) {
-        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
-    } else {
-        shoppingCart = new ShoppingCart();
-        session.setAttribute("shoppingCart", shoppingCart);
-    }
-
     //customer processing
     Customer customer = null;
     if (session.getAttribute("customer") != null) {
         customer = (Customer) session.getAttribute("customer");
         session.setAttribute("customer", customer);
+    }
+
+    //shopping cart processing
+    ShoppingCart shoppingCart = null;
+    if (session.getAttribute("shoppingCart") != null) {
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+    } else if (customer != null) {
+        ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
+        shoppingCartDao.getByCustomerId(customer.getId());
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+    } else {
+        shoppingCart = new ShoppingCart();
+        session.setAttribute("shoppingCart", shoppingCart);
     }
 
 
