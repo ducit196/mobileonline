@@ -1,7 +1,11 @@
 <%@ page import="core.dto.model.common.Account" %>
 <%@ page import="core.dto.model.customer.Customer" %>
 <%@ page import="core.daoimpl.factory.DAOFactory" %>
-<%@ page import="core.dao.customer.CustomerDao" %><%--
+<%@ page import="core.dao.customer.CustomerDao" %>
+<%@ page import="core.dto.model.shoppingcart.ShoppingCart" %>
+<%@ page import="core.dao.shopping_cart.ShoppingCartDao" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="core.dto.model.shoppingcart.ShoppingCartItem" %><%--
   Created by IntelliJ IDEA.
   User: DucBa
   Date: 2/25/2018
@@ -49,8 +53,30 @@
     Customer customer = null;
     if (account != null) {
         customer = customerDao.getByAccountId(account.getId());
-        System.out.println(customer.getFirstName());
         session.setAttribute("customer", customer);
+    }
+
+    //shopping cart processing
+    ShoppingCart shoppingCart = null;
+    if (session.getAttribute("shoppingCart") != null) {
+        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+        System.out.println("Co san cart");
+    } else if (customer != null) {
+        ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
+        shoppingCart = shoppingCartDao.getByCustomerId(customer.getId());
+        session.setAttribute("shoppingCart", shoppingCart);
+        System.out.println("Loaf len tu accont");
+        System.out.println("day la danh sach cac san pham duoc load len");
+        HashMap<Integer, ShoppingCartItem> hashMap = shoppingCart.getShoppingCart();
+        for (Integer integer : hashMap.keySet()) {
+            System.out.println(integer);
+        }
+
+    } else {
+        shoppingCart = new ShoppingCart();
+        session.setAttribute("shoppingCart", shoppingCart);
+        System.out.println("Chua co");
+
     }
 %>
 

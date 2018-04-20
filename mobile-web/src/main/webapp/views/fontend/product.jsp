@@ -46,10 +46,7 @@
     ShoppingCart shoppingCart = null;
     if (session.getAttribute("shoppingCart") != null) {
         shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
-    } else if (customer != null) {
-        ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
-        shoppingCartDao.getByCustomerId(customer.getId());
-        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+        System.out.println("Co san cart");
     } else {
         shoppingCart = new ShoppingCart();
         session.setAttribute("shoppingCart", shoppingCart);

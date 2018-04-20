@@ -47,17 +47,9 @@
     if (session.getAttribute("shoppingCart") != null) {
         shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
         System.out.println("Co san cart");
-    } else if (customer != null) {
-        ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
-        shoppingCartDao.getByCustomerId(customer.getId());
-        shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
-        System.out.println("Loaf len tu accont");
-
     } else {
         shoppingCart = new ShoppingCart();
         session.setAttribute("shoppingCart", shoppingCart);
-        System.out.println("Chua co");
-
     }
 %>
 
@@ -136,6 +128,7 @@
                                 <select id="attribute">
                                     <%
                                         for (ProductAttribute productAttribute : listProductAttribute) {
+
                                     %>
                                     <option value="<%=productAttribute.getAttribute().getName()%>"><%=productAttribute.getAttribute().getName()%>
                                     </option>

@@ -107,10 +107,14 @@
                     </td>
 
                     <td class="cart_total">
-                        <p class="cart_total_price">$59</p>
+                        <p class="cart_total_price">
+                            $<%=entry.getValue().getProduct().getPrice() * entry.getValue().getQuantity()%>
+                        </p>
                     </td>
                     <td class="cart_delete">
-                        <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                        <a class="cart_quantity_delete"
+                           href="../../ShoppingCartController?command=close&productRemoveId=<%=entry.getKey()%>"><i
+                                class="fa fa-times"></i></a>
                     </td>
                 </tr>
                 <%}%>
@@ -119,7 +123,7 @@
         </div>
     </div>
 </section> <!--/#cart_items-->
-<a href="#" style="margin: 400px">Remove all</a>
+<a href="../../ShoppingCartController?command=removeAll" style="margin: 400px">Remove all</a>
 <%
     if (customer == null) {
 %>

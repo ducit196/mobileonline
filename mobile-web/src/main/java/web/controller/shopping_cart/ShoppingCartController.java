@@ -41,10 +41,14 @@ public class ShoppingCartController extends HttpServlet {
             quantity = Integer.parseInt(req.getParameter("quantity"));
         }
 
-
         String attribute = "";
         if (req.getParameter("attribute") != null) {
             attribute = req.getParameter("attribute");
+        }
+
+        int productRemoveId = 0;
+        if (req.getParameter("productRemoveId") != null) {
+            productRemoveId = Integer.parseInt(req.getParameter("productRemoveId"));
         }
 
         String command = req.getParameter("command");
@@ -70,6 +74,14 @@ public class ShoppingCartController extends HttpServlet {
                 shoppingCartDao.insert(shoppingCartSave, new Date(), customer.getId());
                 url = "/views/fontend/home.jsp";
                 session.setAttribute("shoppingCart", null);
+                break;
+            case "close":
+                shoppingCart.getShoppingCart().remove(productRemoveId);
+                url = "/views/fontend/cart.jsp";
+                break;
+            case "removeAll":
+                shoppingCart.getShoppingCart().clear();
+                url = "/views/fontend/cart.jsp";
                 break;
         }
         resp.sendRedirect(url);
