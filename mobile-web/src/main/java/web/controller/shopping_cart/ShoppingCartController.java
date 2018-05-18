@@ -30,6 +30,7 @@ public class ShoppingCartController extends HttpServlet {
         ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
         HttpSession session = req.getSession();
         String url = "";
+
         //get đata
         int productId = 0;
         if (req.getParameter("productId") != null) {
@@ -54,6 +55,7 @@ public class ShoppingCartController extends HttpServlet {
         String command = req.getParameter("command");
 
         ShoppingCart shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
+
 
         switch (command) {
             case "plus":

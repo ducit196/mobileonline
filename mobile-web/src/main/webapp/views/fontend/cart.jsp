@@ -127,7 +127,7 @@
 <%
     if (customer == null) {
 %>
-<a href="login.jsp">Save for later</a>
+<a onclick="changeLogin()" id="saveForLater">Save for later</a>
 
 <%
 } else {
@@ -139,3 +139,11 @@
 
 </body>
 </html>
+
+<script>
+    function changeLogin() {
+        alert('Dang nhap truoc khi luu!')
+        $('#saveForLater').prop('href', 'login.jsp');
+    }
+
+</script>

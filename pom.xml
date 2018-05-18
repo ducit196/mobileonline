@@ -14,7 +14,6 @@
         <module>mobile-core-dao</module>
         <module>mobile-core-daoimpl</module>
         <module>mobile-api-test</module>
-        <module>mobile-core-utils</module>
         <module>mobile-core-commons</module>
 
     </modules>

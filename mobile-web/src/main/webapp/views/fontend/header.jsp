@@ -58,20 +58,13 @@
 
     //shopping cart processing
     ShoppingCart shoppingCart = null;
-    if (session.getAttribute("shoppingCart") != null) {
+    if (session.getAttribute("shoppingCart") != null && ((ShoppingCart) session.getAttribute("shoppingCart")).getShoppingCart().size() > 0) {
         shoppingCart = (ShoppingCart) session.getAttribute("shoppingCart");
         System.out.println("Co san cart");
     } else if (customer != null) {
         ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
         shoppingCart = shoppingCartDao.getByCustomerId(customer.getId());
         session.setAttribute("shoppingCart", shoppingCart);
-        System.out.println("Loaf len tu accont");
-        System.out.println("day la danh sach cac san pham duoc load len");
-        HashMap<Integer, ShoppingCartItem> hashMap = shoppingCart.getShoppingCart();
-        for (Integer integer : hashMap.keySet()) {
-            System.out.println(integer);
-        }
-
     } else {
         shoppingCart = new ShoppingCart();
         session.setAttribute("shoppingCart", shoppingCart);
@@ -150,7 +143,7 @@
                             <li><a href="#"><i class="fa fa-user"></i> Account </a></li>
                             <%}%>
                             <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                            <li><a href="checkout.jsp"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                            <li><a href="checkout.jsp"><i class="fa fa-crosshairs"></i> Order</a></li>
                             <li><a href="cart.jsp"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                             <%
                                 if (account != null) {

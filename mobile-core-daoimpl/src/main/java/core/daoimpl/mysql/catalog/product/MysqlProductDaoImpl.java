@@ -86,9 +86,39 @@ public class MysqlProductDaoImpl implements ProductDao {
         return list;
     }
 
+    public List<Product> getListRecommend(int productId) {
+        List<Product> list = new ArrayList<Product>();
+        String sql = "CALL PROC_PRODUCT_GET_RECOMMEND(?)";
+        try {
+            cs = con.prepareCall(sql);
+            cs.setInt(1, productId);
+            rs = cs.executeQuery();
+            while (rs.next()) {
+                Product product = new Product();
+                product.setId(Integer.parseInt(rs.getString(1)));
+                product.setName(rs.getString(2));
+                product.setDescription(rs.getString(3));
+                product.setThumbai(rs.getString(4));
+                product.setPrice(Float.parseFloat(rs.getString(5)));
+                product.setLength(Float.parseFloat(rs.getString(6)));
+                product.setWidth(Float.parseFloat(rs.getString(7)));
+                product.setHeight(Float.parseFloat(rs.getString(8)));
+                Manufacturer manufacturer = daoFactory.getManufacturerDao().getById(Integer.parseInt(rs.getString(9)));
+                product.setManufacturer(manufacturer);
+                Category category = daoFactory.getCategoryDao().getById(Integer.parseInt(rs.getString(10)));
+                product.setCategory(category);
+                list.add(product);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
     public static void main(String[] args) {
         MysqlProductDaoImpl instance = MysqlProductDaoImpl.getInstance();
-        List<Product> byCategoryId = instance.getByCategoryId(5);
+        List<Product> byCategoryId = instance.getListRecommend(1);
         for (Product product : byCategoryId) {
             System.out.println(product.getName());
         }
