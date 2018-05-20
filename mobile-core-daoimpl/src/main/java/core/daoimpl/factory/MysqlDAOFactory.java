@@ -10,6 +10,7 @@ import core.dao.customer.CustomerDao;
 import core.dao.employee.EmployeeDao;
 import core.dao.order.CouponDao;
 import core.dao.order.OrderDao;
+import core.dao.order.OrderDetailDao;
 import core.dao.shipping.ShippingDao;
 import core.dao.shopping_cart.ShoppingCartDao;
 import core.dao.shopping_cart.ShoppingCartItemDao;
@@ -22,6 +23,7 @@ import core.daoimpl.mysql.customer.MysqlCustomerDaoImpl;
 import core.daoimpl.mysql.employee.MysqlEmployeeDaoImpl;
 import core.daoimpl.mysql.order.MysqlCouponDaoImpl;
 import core.daoimpl.mysql.order.MysqlOrderDaoImpl;
+import core.daoimpl.mysql.order.MysqlOrderDetailDaoImpl;
 import core.daoimpl.mysql.shipping.MysqlShippingDaoImpl;
 import core.daoimpl.mysql.shopping_cart.MysqlShoppingCartDaoImpl;
 import core.daoimpl.mysql.shopping_cart.MysqlShoppingCartItemDaoImpl;
@@ -106,6 +108,10 @@ public class MysqlDAOFactory extends DAOFactory {
 
     public OrderDao getOrderDao() {
         return MysqlOrderDaoImpl.getInstance();
+    }
+
+    public OrderDetailDao getOrderDetailDao() {
+        return MysqlOrderDetailDaoImpl.getInstance();
     }
 
     public ShippingDao getShippingDao() {

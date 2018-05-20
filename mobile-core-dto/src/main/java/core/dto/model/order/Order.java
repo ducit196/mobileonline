@@ -5,6 +5,7 @@ import core.dto.model.shipping.Shipping;
 import core.dto.model.tax.Tax;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author DucBa
@@ -15,6 +16,7 @@ public class Order {
     private Date dateOrderd;
     private int paymentType;
     private int status;
+    List<OrderDetail> listOrderDetail;
     private Coupon coupon;
     private Shipping shipping;
     private Customer customer;
@@ -97,5 +99,13 @@ public class Order {
 
     public void setTax(Tax tax) {
         this.tax = tax;
+    }
+
+    public List<OrderDetail> getListOrderDetail() {
+        return listOrderDetail;
+    }
+
+    public void setListOrderDetail(List<OrderDetail> listOrderDetail) {
+        this.listOrderDetail = listOrderDetail;
     }
 }

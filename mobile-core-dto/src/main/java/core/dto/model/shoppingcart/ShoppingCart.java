@@ -1,6 +1,7 @@
 package core.dto.model.shoppingcart;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author DucBa
@@ -69,5 +70,13 @@ public class ShoppingCart {
      */
     public int countItem() {
         return shoppingCart.size();
+    }
+
+    public float total() {
+        float total = 0;
+        for (Map.Entry<Integer, ShoppingCartItem> set : this.getShoppingCart().entrySet()) {
+            total += set.getValue().getProduct().getPrice() * set.getValue().getQuantity();
+        }
+        return total;
     }
 }

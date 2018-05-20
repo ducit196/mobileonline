@@ -9,6 +9,7 @@ import core.dao.customer.CustomerDao;
 import core.dao.employee.EmployeeDao;
 import core.dao.order.CouponDao;
 import core.dao.order.OrderDao;
+import core.dao.order.OrderDetailDao;
 import core.dao.shipping.ShippingDao;
 import core.dao.shopping_cart.ShoppingCartDao;
 import core.dao.shopping_cart.ShoppingCartItemDao;
@@ -48,6 +49,8 @@ public abstract class DAOFactory {
     public abstract EmployeeDao getEmployeeDao();
     public abstract CouponDao getCouponDao();
     public abstract OrderDao getOrderDao();
+
+    public abstract OrderDetailDao getOrderDetailDao();
     public abstract ShippingDao getShippingDao();
 
     public abstract ShoppingCartDao getShoppingCartDao();

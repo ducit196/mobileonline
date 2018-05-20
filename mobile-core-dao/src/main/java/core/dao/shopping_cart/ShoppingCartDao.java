@@ -9,4 +9,6 @@ public interface ShoppingCartDao {
     void insert(ShoppingCart shoppingCart, Date createOn, int customerId);
 
     ShoppingCart getByCustomerId(int customerId);
+
+    void delete(int shoppingCartId);
 }

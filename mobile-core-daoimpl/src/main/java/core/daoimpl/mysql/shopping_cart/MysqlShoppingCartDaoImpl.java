@@ -77,6 +77,17 @@ public class MysqlShoppingCartDaoImpl implements ShoppingCartDao {
         return null;
     }
 
+    public void delete(int shoppingCartId) {
+        String sql = "CALL PROC_SHOPPING_CART_REMOVE(?)";
+        try {
+            cs = con.prepareCall(sql);
+            cs.setInt(1, shoppingCartId);
+            cs.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
         ShoppingCartDao shoppingCartDao = daoFactory.getShoppingCartDao();
